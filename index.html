@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinsure — AI-Powered Insurance Platform</title>
+<meta name="description" content="Pinsure transforms claims, underwriting, and customer experience with intelligent automation — one platform for insurers, agents, and policyholders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <img src="pinsure-icon.png" alt="Pinsure logo" class="nav__logo">
+      Pinsure
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#features">Product</a>
+      <a href="#audience">Who it's for</a>
+      <a href="#stack">Platform</a>
+      <a href="#cta">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="https://pinsure.online/login/" class="btn btn--ghost" target="_blank" rel="noopener">Sign in</a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal>
+          <span class="eyebrow__dot"></span>
+          AI-Powered Insurance Platform
+        </p>
+        <h1 data-reveal>
+          Insurance,<br>
+          <span class="hero__accent">underwritten by intelligence.</span>
+        </h1>
+        <p class="hero__sub" data-reveal>
+          Pinsure brings claims, underwriting, fraud review, and customer support into one
+          intelligent operating system — helping insurers move from first notice of loss to
+          confident decisions in minutes, not days.
+        </p>
+        <div class="hero__badges" data-reveal>
+          <span>Trusted by modern insurers</span>
+          <span>Secure by design</span>
+          <span>Human-in-the-loop AI</span>
+        </div>
+        <div class="hero__ctas" data-reveal>
+          <a href="https://pinsure.online/login/" class="btn btn--primary" target="_blank" rel="noopener">
+            Sign in to Pinsure
+          </a>
+          <a href="#features" class="btn btn--text">
+            See how it works <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-reveal aria-hidden="true">
+        <div class="radar">
+          <div class="radar__ring radar__ring--1"></div>
+          <div class="radar__ring radar__ring--2"></div>
+          <div class="radar__ring radar__ring--3"></div>
+          <div class="radar__sweep"></div>
+          <div class="radar__core">
+            <svg width="34" height="34" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.5L23.5 6.3V13c0 6.6-4.3 11.9-10.5 13.5C6.3 24.9 2 19.6 2 13V6.3L13 1.5Z" fill="#0A1420"/>
+              <path d="M8.2 13.4l3 3 6.4-6.8" stroke="#3AF0C8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="radar__blip radar__blip--1"><span>Claim flagged</span></div>
+          <div class="radar__blip radar__blip--2"><span>Risk scored</span></div>
+          <div class="radar__blip radar__blip--3"><span>FNOL logged</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Chatbot &amp; virtual assistant</span>
+        <span>·</span>
+        <span>AI-powered underwriting</span>
+        <span>·</span>
+        <span>Fraud detection</span>
+        <span>·</span>
+        <span>Smart document processing</span>
+        <span>·</span>
+        <span>Chatbot &amp; virtual assistant</span>
+        <span>·</span>
+        <span>AI-powered underwriting</span>
+        <span>·</span>
+        <span>Fraud detection</span>
+        <span>·</span>
+        <span>Smart document processing</span>
+        <span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>What Pinsure does</p>
+      <h2 data-reveal>Four systems working as one</h2>
+      <p class="section__sub" data-reveal>
+        Every claim, quote, and question runs through the same intelligence layer —
+        so nothing gets handled twice.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card" data-reveal>
+        <img src="chatbot.jfif" alt="Chatbot and virtual assistant illustration" class="feature-card__image">
+        <h3>Chatbot &amp; Virtual Assistant</h3>
+        <p>24/7 conversational support for policy questions, FNOL intake, and customer guidance.</p>
+      </article>
+      <article class="feature-card" data-reveal>
+        <img src="Ai.jfif" alt="AI-powered underwriting illustration" class="feature-card__image">
+        <h3>AI-Powered Underwriting</h3>
+        <p>Real-time risk scoring, pricing support, and faster decisioning for better outcomes.</p>
+      </article>
+      <article class="feature-card" data-reveal>
+        <img src="Fraud.jfif" alt="Fraud detection illustration" class="feature-card__image">
+        <h3>Fraud Detection</h3>
+        <p>High-confidence alerts for suspicious claims, helping teams investigate sooner.</p>
+      </article>
+      <article class="feature-card" data-reveal>
+        <img src="Document.jfif" alt="Smart document processing illustration" class="feature-card__image">
+        <h3>Smart Document Processing</h3>
+        <p>Instant extraction from documents, photos, and claim packets with minimal manual effort.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cinematic-showcase" aria-label="Pinsure workflow overview">
+    <div class="cinematic-showcase__inner">
+      <div class="cinematic-showcase__copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Why teams choose Pinsure</p>
+        <h2>One intelligent journey from intake to resolution.</h2>
+        <p>
+          Every interaction is connected to the same operating layer — giving customers fast answers,
+          agents a clearer view of risk, and insurers stronger control over every claim.
+        </p>
+        <ul class="check-list">
+          <li>Instant case triage and workflow routing</li>
+          <li>Secure, auditable decisions for every step</li>
+          <li>Human-in-the-loop controls with AI speed</li>
+        </ul>
+      </div>
+      <div class="cinematic-showcase__card" data-reveal>
+        <div class="showcase-card__header">Live insurance intelligence</div>
+        <div class="showcase-card__steps">
+          <div class="showcase-card__step">
+            <span>01</span>
+            <strong>Customer asks</strong>
+            <p>Policyholder receives instant support through the assistant.</p>
+          </div>
+          <div class="showcase-card__step">
+            <span>02</span>
+            <strong>Claim is triaged</strong>
+            <p>Documents are processed and anomalies are surfaced automatically.</p>
+          </div>
+          <div class="showcase-card__step">
+            <span>03</span>
+            <strong>Decision is guided</strong>
+            <p>Underwriters and agents review a richer, faster risk picture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-section" aria-label="Customer trust and outcomes">
+    <div class="trust-section__inner">
+      <div class="trust-section__quote" data-reveal>
+        <p class="eyebrow"><span class="eyebrow__dot"></span>What teams are saying</p>
+        <blockquote>
+          “Pinsure gave our team a real-time view of claims, risk, and customer intent — all in one place.”
+        </blockquote>
+        <div class="trust-section__author">
+          <strong>Amara Singh</strong>
+          <span>Head of Operations, Northstar Insurance</span>
+        </div>
+      </div>
+      <div class="trust-section__metrics" data-reveal>
+        <div class="trust-metric">
+          <strong>92%</strong>
+          <span>faster triage</span>
+        </div>
+        <div class="trust-metric">
+          <strong>3.4x</strong>
+          <span>more efficient reviews</span>
+        </div>
+        <div class="trust-metric">
+          <strong>24/7</strong>
+          <span>always-on support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stack">
+    <div class="stats__inner">
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count="24" data-suffix="/7">0</div>
+        <p>AI assistant availability</p>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count="4">0</div>
+        <p>User roles on one platform</p>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count="1">0</div>
+        <p>Unified control center</p>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count="100" data-suffix="%">0</div>
+        <p>Claims routed through AI triage</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="audience" id="audience">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Who it's for</p>
+      <h2 data-reveal>Built for every side of the insurance business</h2>
+      <p class="section__sub" data-reveal>
+        One platform, tailored for everyone involved — from the insurer to the agent
+        to the policyholder they serve.
+      </p>
+    </div>
+
+    <div class="audience-grid">
+      <article class="audience-card" data-reveal>
+        <span class="audience-card__index">01</span>
+        <img src="Images/Insurance.jfif" alt="Insurance companies illustration" class="audience-card__image">
+        <h3>Insurance Companies</h3>
+        <p>Launch and manage your book of business — configure policy products, manage
+          your agent teams, and track performance company-wide.</p>
+      </article>
+
+      <article class="audience-card" data-reveal>
+        <span class="audience-card__index">02</span>
+        <img src="Images/Agent.jfif" alt="Agents and underwriters illustration" class="audience-card__image">
+        <h3>Agents &amp; Underwriters</h3>
+        <p>Review claims, run AI-powered risk assessments, and manage your assigned
+          policyholders efficiently.</p>
+      </article>
+
+      <article class="audience-card" data-reveal>
+        <span class="audience-card__index">03</span>
+        <img src="Images/Policyholders.jfif" alt="Policyholders illustration" class="audience-card__image">
+        <h3>Policyholders</h3>
+        <p>Buy policies, file claims, and get instant answers from your AI assistant,
+          24/7.</p>
+      </article>
+
+      <article class="audience-card" data-reveal>
+        <span class="audience-card__index">04</span>
+        <img src="Images/Platform operators.jfif" alt="Platform operators illustration" class="audience-card__image">
+        <h3>Platform Operators</h3>
+        <p>Onboard new insurance companies and oversee the entire platform from a
+          single control center.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="cta__inner" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__dot"></span>Ready to modernize</p>
+      <h2>Build tomorrow's insurance, today.</h2>
+      <p>See how Pinsure's intelligence layer fits into your book of business and gives your team a sharper edge.</p>
+      <div class="cta__actions">
+        <a href="https://pinsure.online/login/" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+          Sign in to Pinsure
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="#top" class="nav__brand">
+        <img src="pinsure-icon.png" alt="Pinsure logo" class="nav__logo">
+        Pinsure
+      </a>
+      <p>Intelligent automation for claims, underwriting, and customer experience.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Product</h4>
+      <a href="#features">Chatbot &amp; assistant</a>
+      <a href="#features">Underwriting AI</a>
+      <a href="#features">Fraud detection</a>
+      <a href="#features">Document processing</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Platform</h4>
+      <a href="#audience">Insurance companies</a>
+      <a href="#audience">Agents &amp; underwriters</a>
+      <a href="#audience">Policyholders</a>
+      <a href="#audience">Platform operators</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <a href="https://pinsure.online/login/" target="_blank" rel="noopener">Sign in</a>
+      <a href="mailto:hello@pinsure.online">hello@pinsure.online</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© <span id="year">2026</span> Pinsure. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
