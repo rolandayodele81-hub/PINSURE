@@ -255,6 +255,9 @@ button{ font-family:inherit; }
   border:1px solid rgba(58,240,200,.12);
   box-shadow:0 40px 120px rgba(0,0,0,.42);
 }
+
+/* mobile-only copy variant (hidden by default) */
+.hero__copy--mobile{ display:none; }
 .radar{
   position:relative;
   width:340px; height:340px;
@@ -629,7 +632,11 @@ button{ font-family:inherit; }
 /* ---------- responsive ---------- */
 @media (max-width:900px){
   .hero__inner{ grid-template-columns:1fr; }
-  .hero__visual{ height:320px; order:-1; }
+  /* On small screens we want the copy first, visual below */
+  .hero__visual{ height:280px; order:1; margin-top:20px; border-radius:24px; }
+  /* swap hero copy for mobile-specific copy to ensure perfect ordering */
+  .hero__copy{ display:none; }
+  .hero__copy--mobile{ display:block; }
   .feature-grid{ grid-template-columns:repeat(2,1fr); }
   .cinematic-showcase__inner{ grid-template-columns:1fr; }
   .trust-section__inner{ grid-template-columns:1fr; }
@@ -658,6 +665,13 @@ button{ font-family:inherit; }
   .nav__burger{ display:flex; }
   .hero__badges{ gap:8px; }
   .hero__badges span{ width:100%; }
+  /* Make CTAs stack and span full width on small devices */
+  .hero__ctas{ flex-direction:column; align-items:stretch; }
+  .hero__ctas .btn{ width:100%; padding-left:18px; padding-right:18px; }
+
+  /* Reduce visual size and radius to fit mobile view */
+  .hero__visual{ height:240px; border-radius:18px; }
+  .hero__visual .radar{ width:260px; height:260px; }
   .cta__inner{ padding:48px 24px; }
   .footer__inner{ grid-template-columns:1fr; }
   .btn--ghost{ padding:10px 16px; }
