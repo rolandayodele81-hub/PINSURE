@@ -681,8 +681,11 @@ button{ font-family:inherit; }
 
 /* Hide radar/visual on small screens to improve fit and performance and show static image */
 @media (max-width:640px){
-  /* hide the entire visual on small devices to avoid overflow */
-  .hero__visual{ display:none; }
+  /* show a smaller visual on small devices; keep it compact */
+  .hero__visual{ display:flex; height:220px; border-radius:16px; box-shadow:none; padding:10px; }
+  .hero__visual .radar{ width:180px; height:180px; }
+  .radar__ring{ border-width:0.9px; }
+  .radar__sweep{ animation:spin 5s linear infinite; }
   /* ensure mobile copy is comfortable on small phones */
   .hero__copy--mobile h1{ font-size:2.1rem; line-height:1.04; margin-bottom:10px; }
   .hero__copy--mobile .hero__sub{ font-size:1rem; margin-bottom:14px; }
