@@ -208,8 +208,8 @@ button{ font-family:inherit; }
   max-width:var(--container);
   margin:0 auto;
   display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:48px;
+  grid-template-columns:1.05fr .95fr;
+  gap:28px;
   align-items:center;
   padding-bottom:64px;
 }
@@ -260,7 +260,7 @@ button{ font-family:inherit; }
 .hero__copy--mobile{ display:none; }
 .radar{
   position:relative;
-  width:340px; height:340px;
+  width:300px; height:300px;
 }
 .radar__ring{
   position:absolute; inset:0;
