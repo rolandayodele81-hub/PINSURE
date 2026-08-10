@@ -59,6 +59,7 @@ body::before{
                     radial-gradient(circle at 80% 20%, rgba(58,240,200,0.05), transparent 14%);
   pointer-events:none;
 }
+body.menu-open{ overflow:hidden; }
 h1,h2,h3{
   font-family:var(--font-display);
   font-weight:600;
@@ -184,6 +185,17 @@ button{ font-family:inherit; }
 .nav__burger span{
   width:100%; height:2px; background:var(--white); border-radius:2px;
   transition:transform .25s ease, opacity .25s ease;
+}
+.mobile-nav-backdrop{
+  position:fixed; inset:0;
+  background:rgba(2,6,12,.62);
+  backdrop-filter:blur(8px);
+  opacity:0; visibility:hidden;
+  transition:opacity .25s ease, visibility .25s ease;
+  z-index:45;
+}
+.mobile-nav-backdrop.is-visible{
+  opacity:1; visibility:visible;
 }
 
 /* ---------- hero ---------- */
@@ -649,20 +661,39 @@ button{ font-family:inherit; }
 
 @media (max-width:680px){
   .nav__links{
-    position:absolute; top:100%; left:0; right:0;
+    position:fixed;
+    top:78px;
+    right:16px;
+    left:16px;
     flex-direction:column;
-    background:var(--navy);
-    border-bottom:1px solid var(--line);
-    padding:18px 24px;
-    gap:16px;
-    transform:translateY(-8px);
+    align-items:flex-start;
+    background:rgba(7,13,24,.97);
+    border:1px solid rgba(58,240,200,.16);
+    border-radius:22px;
+    padding:18px 20px 20px;
+    gap:10px;
+    box-shadow:0 24px 80px rgba(0,0,0,.38);
+    transform:translateY(-8px) scale(.98);
     opacity:0; visibility:hidden;
     transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+    z-index:55;
   }
   .nav__links.is-open{
-    opacity:1; visibility:visible; transform:translateY(0);
+    opacity:1; visibility:visible; transform:translateY(0) scale(1);
   }
-  .nav__burger{ display:flex; }
+  .nav__links a{
+    width:100%;
+    padding:12px 0;
+    font-size:1rem;
+    color:var(--paper);
+    border-bottom:1px solid rgba(255,255,255,.07);
+  }
+  .nav__links a:last-child{ border-bottom:none; }
+  .nav__links a:hover{ color:var(--teal); transform:translateX(2px); }
+  .nav__burger{ display:flex; z-index:56; }
+  .nav__burger.is-active span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .nav__burger.is-active span:nth-child(2){ opacity:0; }
+  .nav__burger.is-active span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
   .hero__badges{ gap:8px; }
   .hero__badges span{ width:100%; }
   /* Make CTAs stack and span full width on small devices */
